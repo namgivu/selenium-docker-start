@@ -3,7 +3,7 @@
 #the names
 HUB_PORT=4444
 
-#start the grid = hub + 02 nodes (chrome, firefox)
+#start the grid = hub + 02 nodes (chrome, firefox) ref. https://github.com/SeleniumHQ/docker-selenium#selenium-grid-hub-and-nodes
 docker run -d -p $HUB_PORT:4444 --name selenium-hub selenium/hub:3.4.0-einsteinium
 docker run -d --link selenium-hub:hub selenium/node-chrome:3.4.0-einsteinium
 docker run -d --link selenium-hub:hub selenium/node-firefox:3.4.0-einsteinium
