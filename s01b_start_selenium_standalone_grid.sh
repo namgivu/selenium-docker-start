@@ -4,9 +4,11 @@
 CH_PORT=4445 #grid port for Chrome
 FF_PORT=4446 #grid port for Firefox
 
-#start the standalone grid ref. https://github.com/SeleniumHQ/docker-selenium#standalone-chrome-and-firefox
-docker run -d -p $CH_PORT:4444 selenium/standalone-chrome:3.4.0-einsteinium
-docker run -d -p $FF_PORT:4444 selenium/standalone-firefox:3.4.0-einsteinium
+#start the standalone grid
+#docker run ref. https://github.com/SeleniumHQ/docker-selenium#standalone-chrome-and-firefox
+#param -v and --shm-size ref. https://github.com/SeleniumHQ/docker-selenium#running-the-images
+docker run -d -p $CH_PORT:4444 -v /dev/shm:/dev/shm   selenium/standalone-chrome:3.4.0-einsteinium
+docker run -d -p $FF_PORT:4444 --shm-size 2g          selenium/standalone-firefox:3.4.0-einsteinium
 sleep 1 #wait the service to come up in full
 
 #aftermath check
