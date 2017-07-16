@@ -1,7 +1,7 @@
 #!/usr/bin/env python2.7
 
-SELENIUM_HUB_CH = 'http://localhost:4445/wd/hub'
-SELENIUM_HUB_FF = 'http://localhost:4446/wd/hub'
+SELENIUM_HUB_CH = 'http://localhost:4445/wd/hub' #hub created at file 's01b_start_selenium_standalone_grid.sh'
+SELENIUM_HUB_FF = 'http://localhost:4446/wd/hub' #hub created at file 's01b_start_selenium_standalone_grid.sh'
 
 #region webdriver loading
 from selenium import webdriver
