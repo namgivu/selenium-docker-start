@@ -7,6 +7,7 @@ HUB_PORT=4444
 docker run -d -p $HUB_PORT:4444 --name selenium-hub selenium/hub:3.4.0-einsteinium
 docker run -d --link selenium-hub:hub selenium/node-chrome:3.4.0-einsteinium
 docker run -d --link selenium-hub:hub selenium/node-firefox:3.4.0-einsteinium
+sleep 1 #wait the service to come up in full
 
 #aftermath check
 echo ; sleep 1
