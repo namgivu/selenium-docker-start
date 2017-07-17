@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-#the names
-HUB_PORT=4444
+#load common config
+source ./s00_common.sh
 
 #start the grid = hub + 02 nodes (chrome, firefox) ref. https://github.com/SeleniumHQ/docker-selenium#selenium-grid-hub-and-nodes
-docker run -d -p $HUB_PORT:4444 --name selenium-hub selenium/hub:3.4.0-einsteinium
-docker run -d --link selenium-hub:hub selenium/node-chrome:3.4.0-einsteinium
-docker run -d --link selenium-hub:hub selenium/node-firefox:3.4.0-einsteinium
+docker run -d -p $HUB_PORT:4444 --name $HUB_NAME $HUB_DIMG
+docker run -d --name $NODE_NAME_CH --link selenium-hub:hub $NODE_DIMG_CH
+docker run -d --name $NODE_NAME_FF --link selenium-hub:hub $NODE_DIMG_FF
 sleep 1 #wait the service to come up in full
 
 #aftermath check
