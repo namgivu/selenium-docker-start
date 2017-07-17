@@ -3,6 +3,8 @@
 #load common config
 source ./s00_common.sh
 
+SCALE_PARAMS=$1
+
 #start the grid = hub + 02 nodes (chrome, firefox) via docker compose ref. https://testdetective.com/selenium-grid-with-docker/ and https://gist.github.com/lroslonek/1f5ca6af7e1fbffa914a
 docker_compose="
 $HUB_NAME:
@@ -28,7 +30,7 @@ $NODE_NAME_FF:
 
 DOCKER_COMPOSE_FILE='docker-compose.yml'
 echo "$docker_compose" > $DOCKER_COMPOSE_FILE
-docker-compose up -d --force-recreate
+docker-compose up -d --force-recreate $SCALE_PARAMS
 
 echo "
 Open selenium console
