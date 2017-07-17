@@ -11,6 +11,7 @@ $HUB_NAME:
   image: $HUB_DIMG
   ports:
     - 4444:4444
+  #restart: always #TODO consider to put this in ref. https://gist.github.com/manoj9788/67e248064c89d622cadc6192c66b184d
 
 
 $NODE_NAME_CH:
@@ -19,6 +20,7 @@ $NODE_NAME_CH:
     - 5900
   links:
     - $HUB_NAME:hub
+  #restart: always #TODO consider to put this in ref. https://gist.github.com/manoj9788/67e248064c89d622cadc6192c66b184d
 
 $NODE_NAME_FF:
   image: $NODE_DIMG_FF
@@ -26,6 +28,7 @@ $NODE_NAME_FF:
     - 5900
   links:
     - $HUB_NAME:hub
+  #restart: always #TODO consider to put this in ref. https://gist.github.com/manoj9788/67e248064c89d622cadc6192c66b184d
 "
 
 DOCKER_COMPOSE_FILE='docker-compose.yml'
