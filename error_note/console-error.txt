@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "./s02a1_tiny_test.py", line 9, in <module>
+    desired_capabilities=DesiredCapabilities.CHROME,
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/remote/webdriver.py", line 98, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/remote/webdriver.py", line 188, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/remote/webdriver.py", line 256, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: None
+Stacktrace:
+    at java.util.HashMap.putMapEntries (HashMap.java:500)
+    at java.util.HashMap.putAll (HashMap.java:784)
+    at org.openqa.selenium.remote.DesiredCapabilities.<init> (DesiredCapabilities.java:55)
+    at org.openqa.grid.web.servlet.handler.RequestHandler.process (RequestHandler.java:104)
+    at org.openqa.grid.web.servlet.DriverServlet.process (DriverServlet.java:83)
+    at org.openqa.grid.web.servlet.DriverServlet.doPost (DriverServlet.java:67)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:707)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:790)
+    at org.seleniumhq.jetty9.servlet.ServletHolder.handle (ServletHolder.java:841)
+    at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle (ServletHandler.java:543)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:188)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle (SessionHandler.java:1584)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:188)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle (ContextHandler.java:1228)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:168)
+    at org.seleniumhq.jetty9.servlet.ServletHandler.doScope (ServletHandler.java:481)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doScope (SessionHandler.java:1553)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:166)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope (ContextHandler.java:1130)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:141)
+    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:132)
+    at org.seleniumhq.jetty9.server.Server.handle (Server.java:564)
+    at org.seleniumhq.jetty9.server.HttpChannel.handle (HttpChannel.java:320)
+    at org.seleniumhq.jetty9.server.HttpConnection.onFillable (HttpConnection.java:251)
+    at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded (AbstractConnection.java:279)
+    at org.seleniumhq.jetty9.io.FillInterest.fillable (FillInterest.java:112)
+    at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run (ChannelEndPoint.java:124)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob (QueuedThreadPool.java:672)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run (QueuedThreadPool.java:590)
+    at java.lang.Thread.run (Thread.java:748)

@@ -1,0 +1,30 @@
+starting selenium hub with configuration:
+{
+  "host": null,
+  "port": 4444,
+  "role": "hub",
+  "maxSession": 5,
+  "newSessionWaitTimeout": -1,
+  "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+  "throwOnCapabilityNotPresent": true,
+  "jettyMaxThreads": -1,
+  "cleanUpCycle": 5000,
+  "browserTimeout": 0,
+  "timeout": 30,
+  "debug": false
+}
+18:55:42.888 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+18:55:42.888 INFO - Launching Selenium Grid hub
+2017-07-16 18:55:43.600:INFO::main: Logging initialized @1026ms to org.seleniumhq.jetty9.util.log.StdErrLog
+18:55:43.635 INFO - Will listen on 4444
+2017-07-16 18:55:43.725:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2017-07-16 18:55:43.765:INFO:osjs.session:main: DefaultSessionIdManager workerName=node0
+2017-07-16 18:55:43.765:INFO:osjs.session:main: No SessionScavenger set, using defaults
+2017-07-16 18:55:43.779:INFO:osjs.session:main: Scavenging every 660000ms
+2017-07-16 18:55:43.792:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@5d47c63f{/,null,AVAILABLE}
+2017-07-16 18:55:43.809:INFO:osjs.AbstractConnector:main: Started ServerConnector@6907a1bc{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-07-16 18:55:43.811:INFO:osjs.Server:main: Started @1237ms
+18:55:43.811 INFO - Nodes should register to http://172.17.0.2:4444/grid/register/
+18:55:43.811 INFO - Selenium Grid hub is up and running
+18:55:44.271 INFO - Registered a node http://172.17.0.3:5555
+18:55:44.550 INFO - Registered a node http://172.17.0.4:5555

@@ -1,0 +1,23 @@
+18:55:43.479 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+18:55:43.479 INFO - Launching a Selenium Grid node
+2017-07-16 18:55:44.055:INFO::main: Logging initialized @998ms to org.seleniumhq.jetty9.util.log.StdErrLog
+18:55:44.109 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform LINUX
+18:55:44.109 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform LINUX
+18:55:44.109 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+18:55:44.109 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+18:55:44.109 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+18:55:44.110 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+18:55:44.110 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform LINUX
+2017-07-16 18:55:44.145:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2017-07-16 18:55:44.192:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@20deea7f{/,null,AVAILABLE}
+2017-07-16 18:55:44.205:INFO:osjs.AbstractConnector:main: Started ServerConnector@1d176051{HTTP/1.1,[http/1.1]}{0.0.0.0:5555}
+2017-07-16 18:55:44.206:INFO:osjs.Server:main: Started @1149ms
+18:55:44.206 INFO - Selenium Grid node is up and ready to register to the hub
+18:55:44.215 INFO - Starting auto registration thread. Will try to register every 5000 ms.
+18:55:44.216 INFO - Registering the node to the hub: http://172.17.0.2:4444/grid/register
+18:55:44.274 INFO - The node is registered to the hub and ready to use
+18:55:45.574 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 30000 polling every 3000
