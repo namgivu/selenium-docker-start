@@ -1,2 +1,2 @@
 docker
-selenium
+selenium==3.3.1 #required this version to dodge the bug ref. https://github.com/SeleniumHQ/docker-selenium/issues/521#issuecomment-315665029
