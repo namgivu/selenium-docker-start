@@ -1,0 +1,21 @@
+
+selenium-hub:
+  image: selenium/hub:3.4.0-einsteinium
+  ports:
+    - 4444:4444
+
+
+selenium-node-ch:
+  image: selenium/node-chrome:3.4.0-einsteinium
+  ports:
+    - 5900
+  links:
+    - selenium-hub:hub
+
+selenium-node-ff:
+  image: selenium/node-firefox:3.4.0-einsteinium
+  ports:
+    - 5900
+  links:
+    - selenium-hub:hub
+
